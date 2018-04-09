@@ -117,7 +117,6 @@ resource "aws_route_table_association" "splunk_public1_assoc" {
 
 }
 
-
 resource "aws_route_table_association" "splunk_public2_assoc" {
   subnet_id = "${aws_subnet.splunk_public2_subnet.id}"
   route_table_id = "${aws_route_table.splunk_public_rt.id}"
@@ -139,9 +138,7 @@ resource "aws_route_table_association" "splunk_private2_assoc" {
 
 }
 
-
 #Security groups
-
 
 resource "aws_security_group" "splunk_public_sg" {
   name = "splunk_public_sg"
@@ -255,28 +252,5 @@ resource "aws_instance" "splunk_prod" {
       command = "sleep 6m && ansible-playbook -vv -i aws_hosts splunk..yml"
    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
