@@ -18,10 +18,10 @@ https://www.terraform.io/intro/getting-started/install.html
 
 Clone this repo:
 
-you can run terraform plan command to see what terraform will deply
+you can run "terraform plan" command to see what will terraform will deploy to AWS.
 
 ```
-\\ terraform plan
+$ terraform plan
 Refreshing Terraform state in-memory prior to plan...
 The refreshed state will be used to calculate this plan, but will not be
 persisted to local or remote state storage.
@@ -299,5 +299,5 @@ can't guarantee that exactly these actions will be performed if
 ```
 if you want to deploy the above infrastructure then run the following command
 
-terrraform apply
+$ terrraform apply
 
